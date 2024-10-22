@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eggTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hLp-Wi-W1g">
+                                <rect key="frame" x="10" y="286" width="373" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nth-pN-hqm" userLabel="hard">
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="120"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="hard"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="hard">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pgc-NA-dEd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wx4-HU-Fnq" userLabel="medium">
+                                        <rect key="frame" x="126" y="0.0" width="121" height="120"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="medium"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="medium">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NQF-Ig-gPi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3w-Rz-hHz" userLabel="soft">
+                                        <rect key="frame" x="252" y="0.0" width="121" height="120"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="soft"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="soft">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gk4-P3-Czw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="ZHm-Sv-6zp"/>
+                                    <constraint firstAttribute="width" constant="373" id="wxr-9D-G3W"/>
+                                </constraints>
+                            </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cJU-Yf-fxB">
+                                <rect key="frame" x="42" y="534" width="309" height="4"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your egg!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdd-bs-7iP">
+                                <rect key="frame" x="87.000000000000014" y="232.33333333333334" width="219.33333333333337" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <color key="textColor" white="0.17523621502039316" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.85164355157109339" green="0.92569503665954045" blue="0.96611279249191284" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hLp-Wi-W1g" firstAttribute="top" secondItem="fdd-bs-7iP" secondAttribute="bottom" constant="20" id="7fZ-fW-iXS"/>
+                            <constraint firstItem="hLp-Wi-W1g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="EP1-sv-SLv"/>
+                            <constraint firstItem="fdd-bs-7iP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dlx-fL-6ai"/>
+                            <constraint firstItem="cJU-Yf-fxB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="dwa-tx-aKO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cJU-Yf-fxB" secondAttribute="trailing" constant="42" id="qIW-ZG-jbE"/>
+                            <constraint firstItem="cJU-Yf-fxB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="110" id="rxl-d8-tkA"/>
+                            <constraint firstItem="hLp-Wi-W1g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yYw-67-d5W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="cJU-Yf-fxB" id="bdF-1h-UEg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hard" width="2048" height="2048"/>
+        <image name="medium" width="2048" height="2048"/>
+        <image name="soft" width="2048" height="2048"/>
+    </resources>
+</document>
