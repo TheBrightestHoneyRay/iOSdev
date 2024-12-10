@@ -1,0 +1,42 @@
+{
+  "originHash" : "c3baabaeaf96e057488b6ee1c6b4e68e5118f52bf9f43867a47a75be38cd14ab",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "b6256f191b4c1d8d09f4df94bae69e5ac6e42c81",
+        "version" : "8.1.1"
+      }
+    },
+    {
+      "identity" : "shimmerswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/BeauNouvelle/ShimmerSwift.git",
+      "state" : {
+        "revision" : "f1a4366f74329c313e9528bcbe5286eacc750c05",
+        "version" : "2.2.0"
+      }
+    },
+    {
+      "identity" : "swiftui-shimmer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/markiv/SwiftUI-Shimmer",
+      "state" : {
+        "revision" : "0226e21f9bf355d40e07e5f5e1c33679d50e167f",
+        "version" : "1.5.1"
+      }
+    }
+  ],
+  "version" : 3
+}
